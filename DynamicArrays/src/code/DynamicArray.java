@@ -96,5 +96,6 @@ public class DynamicArray <T>{
 
     public void throwException(){
         throw new ArithmeticException("Negative way");
+        throw new ArithmeticException("Kuda Idesh?");
     }
 }
