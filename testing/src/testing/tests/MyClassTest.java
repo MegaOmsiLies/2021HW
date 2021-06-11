@@ -12,7 +12,16 @@ public class MyClassTest extends Assertions {
 
         int result = myClass.add(10);
 
-        assertEquals(10, result);
+        assertEquals(11, result);
     }
 
+    @Test
+    public void secondTest()
+        {
+            MyClass myClass = new MyClass();
+
+           Throwable res = assertThrows(ArithmeticException.class, () -> myClass.throwsExceptions());
+           assertEquals("test exceptions", res.getMessage());
+
+        }
 }
