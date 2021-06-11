@@ -49,3 +49,12 @@ public class DynamicArray <T>{
         return number + 1;
     }
 
+    public int findFirst(T value){
+        for(int i = 0; i < capacity(); i++){
+            if(Arr[i] == value){
+                return i;
+            }
+        }
+        return -1;
+    }
+
