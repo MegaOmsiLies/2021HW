@@ -17,3 +17,9 @@ public class DynamicArray <T>{
         }
         else {Arr = (T[])new Object[SIZE];}
     }
+
+    public T get(int index){
+        if(capacity() <= index | index < 0){throwException();}
+        return Arr[index];
+    }
+
