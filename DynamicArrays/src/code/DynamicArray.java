@@ -40,3 +40,12 @@ public class DynamicArray <T>{
         return Arr.length;
     }
 
+    public int size(){
+        int number = 0;
+        for(int i = 0; i < capacity(); i++){
+            if(Arr[i] != null){
+                number = i;
+            }}
+        return number + 1;
+    }
+
