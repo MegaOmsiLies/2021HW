@@ -14,4 +14,11 @@ public class TestDynamicArray extends Assertions {
         assertEquals(1, dynamicArray.capacity());
     }
 }
+    @Test
+    public void test_set_and_get(){
+        DynamicArray dynamicArray = new DynamicArray();
+        dynamicArray.resize(1);
+        dynamicArray.set(0, 5);
+        assertEquals(5, dynamicArray.get(0));
+    }
 
