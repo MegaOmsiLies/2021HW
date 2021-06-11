@@ -94,3 +94,7 @@ public class DynamicArray <T>{
         if (capacity() - 1 - index >= 0) System.arraycopy(Arr, index + 1, Arr, index, capacity() - 1 - index);
     }
 
+    public void throwException(){
+        throw new ArithmeticException("Negative way");
+    }
+}
