@@ -63,3 +63,13 @@ public class TestDynamicArray extends Assertions {
         assertEquals(0, dynamicArray.findFirst(5));
     }
 
+    @Test
+    public void test_findFirst_incorrect(){
+        DynamicArray dynamicArray = new DynamicArray();
+        dynamicArray.resize(3);
+        dynamicArray.set(0, 5);
+        dynamicArray.set(1, 2);
+        dynamicArray.set(2, 5);
+        assertEquals(-1, dynamicArray.findFirst(3));
+    }
+
