@@ -34,4 +34,11 @@ public class TestDynamicArray extends Assertions {
         assertThrows(ArithmeticException.class, () -> dynamicArray.get(10));
     }
 
+    @Test
+    public void test_set_exception(){
+        DynamicArray dynamicArray = new DynamicArray();
+        assertThrows(ArithmeticException.class, () -> dynamicArray.set(-1, 5));
+        assertThrows(ArithmeticException.class, () -> dynamicArray.set(10, 18));
+    }
+
 
