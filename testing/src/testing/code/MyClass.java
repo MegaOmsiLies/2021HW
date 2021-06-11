@@ -5,4 +5,9 @@ public class MyClass {
     {
         return value + 1;
     }
+
+    public void throwsExceptions()
+    {
+        throw new ArithmeticException("test exceptions");
+    }
 }
