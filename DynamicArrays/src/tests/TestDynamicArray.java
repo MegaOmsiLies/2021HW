@@ -47,4 +47,10 @@ public class TestDynamicArray extends Assertions {
         assertEquals(5, dynamicArray.capacity());
     }
 
+    @Test
+    public void test_init_without_correct_int(){
+        DynamicArray dynamicArray = new DynamicArray(-5);
+        assertEquals(10, dynamicArray.capacity());
+    }
+
 
