@@ -36,3 +36,7 @@ public class DynamicArray <T>{
             System.arraycopy(newArray, 0, Arr, 0, Math.min(newSize, newArray.length));
     }
 
+    public int capacity(){
+        return Arr.length;
+    }
+
