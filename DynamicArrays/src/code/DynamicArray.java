@@ -28,3 +28,11 @@ public class DynamicArray <T>{
         Arr[index] = value;
     }
 
+    public void resize(int newSize){
+        if (newSize < 0){throwException();}
+        T[] newArray = Arr.clone();
+        Arr = (T[])new Object[newSize];
+        if (Math.min(newSize, newArray.length) >= 0)
+            System.arraycopy(newArray, 0, Arr, 0, Math.min(newSize, newArray.length));
+    }
+
