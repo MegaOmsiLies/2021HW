@@ -88,4 +88,9 @@ public class DynamicArray <T>{
         Arr[index] = value;
     }
 
+    public void remove(int index){
+        if(capacity() <= index | index < 0){throwException();}
+        Arr[index] = null;
+        if (capacity() - 1 - index >= 0) System.arraycopy(Arr, index + 1, Arr, index, capacity() - 1 - index);
+    }
 
