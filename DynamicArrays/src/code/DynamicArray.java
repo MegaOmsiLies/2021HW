@@ -23,3 +23,8 @@ public class DynamicArray <T>{
         return Arr[index];
     }
 
+    public void set(int index,T value){
+        if(capacity() <= index | index < 0){throwException();}
+        Arr[index] = value;
+    }
+
