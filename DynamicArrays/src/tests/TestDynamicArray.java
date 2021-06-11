@@ -41,4 +41,10 @@ public class TestDynamicArray extends Assertions {
         assertThrows(ArithmeticException.class, () -> dynamicArray.set(10, 18));
     }
 
+    @Test
+    public void test_init_with_int(){
+        DynamicArray dynamicArray = new DynamicArray(5);
+        assertEquals(5, dynamicArray.capacity());
+    }
+
 
