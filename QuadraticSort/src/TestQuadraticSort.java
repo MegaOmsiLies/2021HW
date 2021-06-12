@@ -23,7 +23,7 @@ public class TestQuadraticSort extends Assertions {
         assertArrayEquals(expected, actual);
     }
     @Test
-    public void sort_allElenemtsEquals_doNothing()
+    public void sort_allElementsEquals_doNothing()
     {
         int[] actual = { 10, 10, 10, 10, 10 };
         int[] expected = { 10, 10, 10, 10, 10 };
