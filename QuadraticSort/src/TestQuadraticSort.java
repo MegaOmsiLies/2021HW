@@ -62,4 +62,5 @@ public class TestQuadraticSort extends Assertions {
 
         assertArrayEquals(expected, actual);
     }
+
 }

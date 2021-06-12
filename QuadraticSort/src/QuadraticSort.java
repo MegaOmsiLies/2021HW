@@ -1,4 +1,3 @@
-
 public class QuadraticSort {
     public void sort(int[] data)
     {
