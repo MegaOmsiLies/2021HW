@@ -15,7 +15,5 @@ public class QuadraticSort {
             data[j+1] = K;
             }
      }
-
-
-    }
+}
     
