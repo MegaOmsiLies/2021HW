@@ -96,3 +96,17 @@ public class TestDynamicArray extends Assertions {
     }
 
     @Test
+    public void test_add(){
+        DynamicArray dynamicArray = new DynamicArray();
+        dynamicArray.resize(4);
+        dynamicArray.set(0, 5);
+        dynamicArray.set(2, 5);
+        dynamicArray.add(3);
+        dynamicArray.add(4);
+        assertEquals(3, dynamicArray.get(3));
+        assertEquals(4, dynamicArray.get(4));
+        assertEquals(9, dynamicArray.capacity());
+        assertNull(dynamicArray.get(7));
+
+    }
+
