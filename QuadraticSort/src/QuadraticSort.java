@@ -1,7 +1,10 @@
 public class QuadraticSort {
     public QuadraticSort() {
     }
+import java.util.Arrays;
 
+
+public class QuadraticSort {
     public void sort(int[] data) {
         int n = data.length;
 
