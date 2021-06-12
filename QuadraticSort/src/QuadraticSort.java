@@ -1,6 +1,3 @@
-public class QuadraticSort {
-    public QuadraticSort() {
-    }
 import java.util.Arrays;
 
 
