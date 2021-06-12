@@ -104,5 +104,5 @@ public class DynamicArray <T>{
 
     public void throwException(){
         throw new ArithmeticException("Kuda Idesh?");
-    }
+    } 
 }
