@@ -18,27 +18,4 @@ public class QuadraticSort {
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
