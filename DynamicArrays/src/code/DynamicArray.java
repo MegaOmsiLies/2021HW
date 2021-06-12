@@ -66,6 +66,14 @@ public class DynamicArray <T>{
         return -1;
     }
     
+    public void add(T value){
+        if (size() >= capacity()) {
+            resize(capacity() * RATE + 1);
+        }
+        set(size(), value);
+    }
+
+
     public void insert(int index, T value){
         if(index < 0){throwException();}
         int number = -1;
