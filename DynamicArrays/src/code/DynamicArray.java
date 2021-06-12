@@ -1,6 +1,5 @@
 package code;
 
-public class DynamicArray {
 public class DynamicArray <T>{
     private final int SIZE = 10;
     private final int RATE = 2;
@@ -95,7 +94,6 @@ public class DynamicArray <T>{
     }
 
     public void throwException(){
-        throw new ArithmeticException("Negative way");
         throw new ArithmeticException("Kuda Idesh?");
     }
 }
