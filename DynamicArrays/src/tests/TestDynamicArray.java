@@ -141,3 +141,4 @@ public class TestDynamicArray extends Assertions {
         assertThrows(ArithmeticException.class, () -> dynamicArray.remove(-1));
         assertThrows(ArithmeticException.class, () -> dynamicArray.remove(100));
     }
+}
