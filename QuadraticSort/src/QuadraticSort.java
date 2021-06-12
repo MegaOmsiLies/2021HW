@@ -2,18 +2,15 @@ import java.util.Arrays;
 
 
 public class QuadraticSort {
-    public void sort(int[] data) {
-
+    public void sort(int[] data)
+    {
         for(int i = 1; i < data.length; ++i) {
             int K = data[i];
-
-            int j;
-            for(j = i - 1; j >= 0 && data[j] > K; --j) {
-                data[j + 1] = data[j];
+            int j= i- 1;
+            while (j >= 0 && K < data[K]){
+                data[K+1] = data[K];
+                K--;
             }
-
-            data[j + 1] = K;
-        }
-
+            data[K + 1] = j;
     }
 }
