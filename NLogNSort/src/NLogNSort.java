@@ -1,63 +1,60 @@
-import java.util.Arrays;
-
 public class NLogNSort {
-
     public void sort(int[] array)
     {
-        boolean sorted = true;
+        boolean sorting = true;
         for (int i = 0; i < array.length - 1; i++) {
             if (array[i] > array[i+1]) {
-                sorted = false;
+                sorting = false;
             }
         }
 
-        if (sorted) {
+        if (sorting) {
             return;
         }
 
-        heapsort(array);
+        HeapSort(array);
     }
 
-    private int[] heapsort(int[] array) {
-        buildheap(array);
+    private int[] HeapSort(int[] array) {
+        bullhead(array);
         for (int i = array.length - 1; i >= 0; i--) {
             swap(array, i, 0);
-            restoreheap(array, i, 0);
+            restoreHeap(array, i, 0);
         }
         return array;
     }
 
-    private void buildheap(int[] array) {
+    private void bullhead(int[] array) {
         int middle = (array.length / 2) - 1;
 
         for (int i = middle; i > -1; i--) {
-            restoreheap(array, (array.length - 1), i);
+            restoreHeap(array, (array.length - 1), i);
         }
     }
 
-    private void restoreheap(int[] data, int size, int index) {
+    private void restoreHeap(int[] data, int size, int index) {
         int left = ((2 * index) + 1);
         int right = ((2 * index) + 2);
-        int max = index;
+        int maximum = index;
 
         if ((left < size) && (data[left] > data[index])) {
-            max = left;
+            maximum = left;
         }
 
-        if ((right < size) && (data[right] > data[max])) {
-            max = right;
+        if ((right < size) && (data[right] > data[maximum])) {
+            maximum = right;
         }
 
-        if (max != index) {
-            swap(data, index, max);
-            restoreheap(data, size, max);
+        if (maximum != index) {
+            swap(data, index, maximum);
+            restoreHeap(data, size, maximum);
         }
     }
 
 
-    private void swap(int[] data, int i, int j) {
-        int temp = data[i];
-        data[i] = data[j];
-        data[j] = temp;
+    private static void swap(int[] array, int j, int k) {
+        int temp = array[j];
+        array[j] = array[k];
+        array[k] = temp;
     }
 }
